@@ -1,0 +1,33 @@
+
+li{
+	list-style: none;
+	float: left;
+	margin-left: 10px;
+}
+
+
+header{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	overflow: hidden;
+}
+
+	nav{
+		float: right;
+		margin-left: 10px;
+	}
+
+	nav li{
+		cursor: pointer;
+	}
+
+section{
+	padding-top: 90px;
+}
+
+footer{
+	margin-top: 20px;
+	text-align: center;
+}
+
