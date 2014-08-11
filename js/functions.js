@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$(".ancla").click(function(event) {
 		var link = $(this);
         var anchor  = link.attr('name');
-        var altura = $(anchor).offset().top;  
+         
 
         /*$(window).scroll(function(){
 	    	if($(window).scrollTop() >= altura){
@@ -18,6 +18,19 @@ $(document).ready(function() {
         }, 1000);
         return false;
 	});	
+
+	$(window).scroll(function(){		
+		var altura = $(".content").offset().top; 
+    	if($(window).scrollTop() >= altura){
+    		 $("nav").css({
+    		 	background: '#ccc'
+    		 });
+        }else{
+          	 $("nav").css({
+    		 	background: 'none'
+    		 });
+        }         
+	});
 
 	
 });
