@@ -46,9 +46,44 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*
+////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+ */
+
+.section-active{
+	background: #fff; border-radius: 5px;
+}
+
+/**
+ * Estilos del texto.
+ */
+
+.text-logo{
+	font-size: 40px;
+}
+
+.text-menu{
+	font-size: 20px;
+}
+
+.title-section{
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.subtitle-section{
+	font-size: 27px;
+	opacity: 0.5;
+}
+
+/**
+ * Estilos maqueta
+ */
 
 body{
 	font-size: 15px;
+	max-width: 100%;
 }
 
 	header{
@@ -59,6 +94,11 @@ body{
 
 		.background-nav{
 			background-color: #ccc;
+			/*-moz-box-shadow: 0 1px 7px 0 rgba(0,0,0,0.8);
+			-o-box-shadow: 0 1px 7px 0 rgba(0,0,0,0.8);
+			-ms-box-shadow: 0 1px 7px 0 rgba(0,0,0,0.8);
+			-webkit-box-shadow: 0 1px 7px 0 rgba(0,0,0,0.8);
+			box-shadow: 0 1px 7px 0 rgba(0,0,0,0.8);*/
 		}
 
 		nav{
@@ -68,11 +108,13 @@ body{
 			left: 0;
 			top: 0;
 			z-index: 100;			
-			height: 80px;
-			transition: background, height .9s;
-			-moz-transition: background .9s;
-			-o-transition: background .9s;
-			-webkit-transition: background .9s;
+			height: 70px;			
+
+			transition: background .1s;
+			-ms-transition: background .1s;
+			-moz-transition: background .1s;
+			-o-transition: background .1s;
+			-webkit-transition: background .1s;
 		}			
 
 			#content-header{
@@ -84,14 +126,11 @@ body{
 			}
 
 				#logo{
-					float: left;
-					font-size: 40px;
+					float: left;					
 				}
 
 				#menu{	
-					float: right;
-					padding-top: 10px;
-					padding-bottom: 10px;				
+					float: right;			
 				}
 
 					#menu ul{
@@ -100,14 +139,15 @@ body{
 
 						#menu li{
 							float: left;
-							margin-right: 20px;
-							font-size: 25px;
+							margin-right: 10px;							
 							cursor: pointer;
 							display: block;
+							padding: 9px;
 						}
 
 						#menu li:hover{
 							background: #fff;
+							border-radius: 5px;
 						}
 
 				#logo, #menu{
@@ -116,7 +156,7 @@ body{
 
 	#content{
 		margin-right: 20px;
-		margin-left: 20px;
+		margin-left: 20px;		
 	}
 
 		section{
@@ -129,16 +169,7 @@ body{
 				margin-top: 15px;
 				text-align: center;
 			}
-
-				.head-section .title-section{
-					font-size: 40px;
-					text-transform: uppercase;
-				}
-
-				.head-section .subtitle-section{
-					font-size: 27px;
-					opacity: 0.5;
-				}
+				
 
 	footer{
 		margin-top: 20px;
@@ -146,7 +177,15 @@ body{
 	}
 
 
-@media only screen and (min-width : 1824px) {
+@media only screen and (max-width : 800px) {
+
+	.title-section{
+		font-size: 35px;
+	}
+
+	.subtitle-section{
+		font-size: 22px;
+	}
 	
 }
 
